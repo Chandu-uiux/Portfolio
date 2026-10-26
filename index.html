@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Chandra Sekhar Sai — Product Designer</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+:root{--bg:#f4f0e8;--card:#fff;--ink:#12142b;--mut:#6b6d80;--blue:#3355ff;--lime:#d8ff5a;--navy:#12142b;--line:#e4dfd3;--tint:#f1f4ff;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0c0e20;--card:#171a35;--ink:#f4f0e8;--mut:#9b9db5;--line:#272a4a;--tint:#1a1e42}}
+:root[data-theme="dark"]{--bg:#0c0e20;--card:#171a35;--ink:#f4f0e8;--mut:#9b9db5;--line:#272a4a;--tint:#1a1e42}
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Manrope,system-ui,sans-serif;line-height:1.6;overflow-x:hidden}
+h1,h2,h3,p{margin:0}a{color:inherit;text-decoration:none}
+h1,h2{letter-spacing:-.045em;line-height:1;font-weight:600}
+.w{max-width:1120px;margin:0 auto;padding:0 24px}
+.mono{font-family:"JetBrains Mono",monospace;font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--mut)}
+.mono i{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--blue);margin-right:8px}
+.b{color:var(--blue)}.l{color:var(--lime)}
+nav{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:color-mix(in srgb,var(--bg) 80%,transparent);backdrop-filter:blur(12px)}
+nav .w{display:flex;align-items:center;justify-content:space-between;height:72px}
+.lg{display:flex;align-items:center;gap:10px;font-weight:700}
+.lg s{width:30px;height:30px;border-radius:50%;background:var(--blue);display:grid;place-items:center;text-decoration:none;color:#fff;font-size:13px}
+nav ul{display:flex;gap:32px;list-style:none;margin:0;padding:0;font-size:13px;font-weight:500}
+.btn{display:inline-flex;gap:10px;align-items:center;padding:13px 22px;border-radius:8px;font-size:13px;font-weight:600;transition:transform .25s,box-shadow .25s}
+.btn:hover{transform:translateY(-3px)}.btn span{transition:transform .25s}.btn:hover span{transform:translateX(4px)}
+.dk{background:var(--navy);color:#fff}.bl{background:var(--blue);color:#fff;box-shadow:0 10px 24px #3355ff44}.lm{background:var(--lime);color:#12142b}
+.hero{padding:80px 0 88px}
+@keyframes spin{to{transform:rotate(360deg)}}@keyframes breathe{50%{transform:scale(1.04)}}@keyframes up{to{transform:none}}
+@keyframes f1{50%{transform:translateY(-14px) rotate(-3deg)}}@keyframes f2{50%{transform:translateY(-10px) rotate(2deg)}}@keyframes f3{50%{transform:translateY(-18px)}}
+.meta{display:flex;gap:22px;flex-wrap:wrap;align-items:center;margin-bottom:28px}
+.meta i{width:4px;height:4px;border-radius:50%;background:var(--blue)}
+.hero h1{font-size:clamp(46px,9.4vw,124px);letter-spacing:-.06em;line-height:.94;font-weight:600;max-width:1000px;margin:0}
+.ln{display:block;overflow:hidden;padding-bottom:.14em;margin-bottom:-.14em}
+.ln>span{display:block;transform:translateY(110%);animation:up .9s cubic-bezier(.2,.8,.2,1) forwards}
+.ln:nth-child(2)>span{animation-delay:.12s}.ln:nth-child(3)>span{animation-delay:.24s}
+.lead{display:flex;justify-content:flex-end;align-items:center;gap:40px;margin:56px 0 56px}
+.lead p{max-width:480px;color:var(--mut);font-size:17px;line-height:1.7}
+.go{flex:none;width:64px;height:64px;border-radius:50%;background:var(--blue);color:#fff;display:grid;place-items:center;font-size:26px;transition:transform .4s;box-shadow:0 12px 30px #3355ff55}.go:hover{transform:scale(1.1) rotate(45deg)}
+.stage{position:relative;overflow:hidden;background:var(--blue);aspect-ratio:2.4/1;min-height:420px;isolation:isolate}
+.rg{position:absolute;left:43%;top:5%;translate:-50% -50%;border-radius:50%;aspect-ratio:1;background:#ffffff0d;animation:breathe 8s ease-in-out infinite;z-index:-1}
+.r1{width:69%}.r2{width:54%;animation-delay:-2s}.r3{width:42%;animation-delay:-4s;background:#3355ff}
+.pc2{position:absolute;left:12%;top:20%;width:27%;min-width:230px;background:#fff;color:#12142b;padding:34px 38px 40px;transform:rotate(-5deg);box-shadow:0 30px 60px #12142b44;animation:f1 6s ease-in-out infinite}
+.pc2 .mono{color:var(--blue);font-size:10px}
+.pc2 h3{font-size:clamp(22px,2.4vw,34px);letter-spacing:-.045em;line-height:1.08;font-weight:600;margin-top:42px;color:#12142b}
+.tag2{position:absolute;left:51%;top:30%;background:#12142b;color:#fff;padding:15px 20px;font-size:14px;font-weight:600;line-height:1.35;transform:rotate(4deg);animation:f2 5s ease-in-out -1s infinite}
+.tag2 b{color:var(--lime)}
+.orbit{position:absolute;right:7%;top:14%;width:12.5%;min-width:110px;aspect-ratio:1;border:1px solid #ffffff44;border-radius:50%}
+.orbit svg{width:100%;height:100%;animation:spin 22s linear infinite}
+.orbit text{font-family:"JetBrains Mono",monospace;font-size:11.5px;letter-spacing:.14em;fill:#fff}
+.cl{position:absolute;border-radius:50%;aspect-ratio:1}
+.coral{background:#ff7f6b;left:0;top:78%;width:10%;animation:f3 7s ease-in-out infinite}
+.lm2{background:var(--lime);left:70%;top:74%;width:22%;animation:f3 8s ease-in-out -3s infinite}
+@media(max-width:860px){.lead{flex-direction:column;align-items:flex-start;gap:24px}.stage{aspect-ratio:auto;min-height:560px}.pc2{left:6%;top:9%;width:72%}.tag2{left:30%;top:52%}.orbit{right:5%;top:auto;bottom:6%;width:96px;min-width:96px}.coral{width:22%;top:80%}.lm2{width:44%;left:48%;top:80%}}
+.strip{background:var(--card);padding:22px 0;overflow:hidden}
+.strip .w{display:flex;align-items:center;gap:32px}
+.mq{overflow:hidden;flex:1;mask-image:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent)}
+.tr{display:flex;gap:64px;width:max-content;animation:sc 24s linear infinite;font-weight:700;font-size:14px;white-space:nowrap}
+@keyframes sc{to{transform:translateX(-50%)}}
+.ver{color:var(--blue);font-size:11px;font-weight:600;white-space:nowrap}
+section{padding:104px 0}
+.hd{display:flex;justify-content:space-between;align-items:end;gap:32px;margin-bottom:48px;flex-wrap:wrap}
+.hd h2{font-size:clamp(38px,5.5vw,64px);margin-top:18px}
+.hd p{max-width:330px;color:var(--mut);font-size:13px}
+.cases{display:grid;gap:30px}
+.case{display:grid;grid-template-columns:.54fr 1fr;background:var(--card);min-height:420px;overflow:hidden}
+.case .tx{padding:48px 52px;display:flex;flex-direction:column;justify-content:space-between;gap:32px}
+.case .no{font-family:"JetBrains Mono",monospace;font-size:11px;font-weight:700}
+.case h3{font-size:clamp(34px,4vw,50px);letter-spacing:-.045em;font-weight:500;line-height:1;margin:14px 0}
+.case p{color:var(--mut);font-size:15px;max-width:330px}
+.lk2{display:inline-flex;align-items:center;gap:10px;font-size:14px;font-weight:600;transition:gap .3s}.case:hover .lk2{gap:18px}
+.vis{position:relative;background:var(--pc);overflow:hidden;display:grid;place-items:center;min-height:380px}
+.vis::before,.vis::after{content:"";position:absolute;border-radius:50%;animation:breathe 7s ease-in-out infinite}
+.vis::before{width:560px;height:560px;background:#ffffff14}.vis::after{width:380px;height:380px;border:1px solid #ffffff38;animation-delay:-3s}
+.vb{position:absolute;width:230px;height:300px;border-radius:20px;background:#ffffff40;transform:translate(70px,-30px) rotate(8deg);transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.vf{position:relative;z-index:2;width:240px;height:320px;background:var(--card);color:var(--ink);border-radius:22px;transform:rotate(-4deg);padding:26px;box-shadow:0 30px 70px #12142b40;transition:transform .7s cubic-bezier(.2,.8,.2,1)}
+.case:hover .vf{transform:rotate(0) translateY(-12px)}.case:hover .vb{transform:translate(92px,-42px) rotate(11deg)}
+.vf .dash{width:32px;height:5px;border-radius:3px;background:var(--ink)}
+.vf .st{font-size:46px;font-weight:700;letter-spacing:-.05em;color:var(--sc);margin-top:44px;line-height:1}
+.vf .lb{font-family:"JetBrains Mono",monospace;font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:var(--mut);margin-top:10px}
+.mb{position:absolute;left:26px;right:26px;bottom:24px;display:flex;gap:8px;align-items:end;height:90px}
+.mb i{flex:1;background:var(--tint);border-radius:4px 4px 0 0;height:0;transition:height 1s cubic-bezier(.2,.8,.2,1) .3s}
+.case.in .mb i{height:var(--h)}.mb i:last-child{background:var(--sc)}
+.bento{display:grid;grid-template-columns:1.15fr 1fr;gap:12px}
+.bc{background:var(--card);border:1px solid var(--line);padding:32px;position:relative;overflow:hidden;transition:transform .4s}
+.bc:hover{transform:translateY(-6px)}
+.bc h3{font-size:24px;font-weight:500;letter-spacing:-.03em;margin:14px 0 10px}
+.bc p{color:var(--mut);font-size:13px;max-width:290px}
+.ic{width:42px;height:42px;border-radius:50%;background:var(--tint);color:var(--blue);display:grid;place-items:center}
+.tall{grid-row:span 2;padding:0;display:flex;flex-direction:column}.tall .t{padding:32px}
+.viz{flex:1;min-height:280px;background:var(--tint);display:grid;place-items:center;position:relative}
+.core{width:84px;height:84px;border-radius:50%;background:var(--blue);box-shadow:0 0 0 18px #3355ff22,0 0 0 38px #3355ff12;animation:breathe 3s infinite;display:grid;place-items:center;color:#fff;font-size:30px}
+.dk2{background:var(--navy);color:#fff;border-color:var(--navy)}.dk2 p{color:#a5a8c4}
+.big{font-size:84px;font-weight:700;letter-spacing:-.05em;color:var(--lime);line-height:1}
+.bars{display:flex;gap:5px;align-items:end;height:60px;margin-top:14px}
+.bars i{width:5px;background:var(--blue);border-radius:2px;height:0;transition:height 1s cubic-bezier(.2,.8,.2,1)}
+.in .bars i{height:var(--h)}.bars i:nth-child(n+6){background:var(--lime)}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:20px;align-items:center}
+.tags{display:flex;gap:6px;margin-top:16px;flex-wrap:wrap}.tags span{border:1px solid var(--line);font-size:9px;padding:3px 9px;border-radius:4px;color:var(--mut)}
+.night{background:var(--navy);color:#fff}
+.night .w{display:grid;grid-template-columns:1fr 1.25fr;gap:56px;align-items:center}
+.night h2{font-size:clamp(44px,6vw,76px);margin:18px 0 22px}
+.night .mono{color:var(--lime)}.night .mono i{background:var(--lime)}
+.night p.d{color:#a5a8c4;font-size:14px;max-width:360px}
+.steps{border-left:1px solid #ffffff22;padding-left:16px;margin:26px 0;font-size:12px;color:#c9cbe0;display:grid;gap:10px}
+.steps b{font-family:"JetBrains Mono";color:var(--lime);margin-right:10px;font-weight:400}
+.nums{display:flex;gap:40px;margin:32px 0}.nums b{font-size:34px;font-weight:600;letter-spacing:-.04em;display:block}.nums small{font-size:10px;color:#8d90ad}
+.globe{aspect-ratio:1.25;border:1px solid #ffffff18;border-radius:16px;background:radial-gradient(circle at 50% 50%,#1d2b73,#0e1128 70%);position:relative;overflow:hidden;display:grid;place-items:center}
+.globe .r{position:absolute;border:1px solid #3355ff77;border-radius:50%;animation:spin 30s linear infinite}
+.globe .r1{width:62%;aspect-ratio:1}.globe .r2{width:62%;aspect-ratio:1;transform:rotateX(70deg);animation:none}.globe .r3{width:42%;aspect-ratio:1;border-style:dashed;animation-direction:reverse}
+.dot{position:absolute;width:10px;height:10px;border-radius:50%;border:2px solid var(--blue);background:#12142b;animation:ping2 2.5s infinite}
+@keyframes ping2{50%{box-shadow:0 0 0 10px #3355ff22}}
+.pin{width:12px;height:12px;border-radius:50%;background:var(--lime);box-shadow:0 0 0 8px #d8ff5a33;animation:breathe 2s infinite}
+.bar{position:absolute;left:5%;right:5%;bottom:6%;background:#0a0c1c;border-radius:8px;padding:10px 14px;display:flex;justify-content:space-between;font-size:11px;font-weight:600}
+.quote{text-align:center;padding-bottom:40px}
+.quote h2{font-size:clamp(28px,4.4vw,48px);font-weight:500;max-width:760px;margin:20px auto 32px;line-height:1.15}
+.qm{font-size:48px;color:var(--blue);line-height:1;height:30px}
+.who{display:inline-flex;align-items:center;gap:12px;font-size:10px;text-align:left}
+.who i{width:34px;height:34px;border-radius:50%;background:#d9a37a;color:#fff;display:grid;place-items:center;font-style:normal;font-weight:700;font-size:11px}
+.cta{background:var(--blue);border-radius:20px;padding:56px;display:grid;grid-template-columns:1.2fr 1fr;gap:40px;align-items:center;color:#fff;position:relative;overflow:hidden}
+.cta::before{content:"";position:absolute;width:520px;height:520px;border:1px solid #ffffff22;border-radius:50%;right:-120px;top:-160px;animation:spin 40s linear infinite}
+.cta h2{font-size:clamp(38px,5.4vw,64px);margin:18px 0}.cta h2 em{font-style:normal;opacity:.55}
+.cta .mono{color:var(--lime)}
+.pc{background:var(--card);color:var(--ink);border-radius:12px;padding:30px;position:relative;box-shadow:0 30px 60px #12142b44}
+.pc .big2{font-size:46px;font-weight:700;letter-spacing:-.05em;line-height:1.1}
+.pc ul{list-style:none;padding:0;margin:18px 0 22px;display:grid;gap:10px;font-size:12px;color:var(--mut);border-top:1px solid var(--line);padding-top:16px}
+.pc li::before{content:"✓";color:var(--blue);margin-right:10px;font-weight:700}
+.pc .btn{width:100%;justify-content:center}
+footer{background:var(--navy);color:#fff;margin-top:96px;padding:64px 0 28px}
+footer .t{display:grid;grid-template-columns:1fr 1.2fr 1fr;gap:32px;align-items:start;padding-bottom:56px}
+footer p{color:#8d90ad;font-size:11px;margin-top:10px}
+footer h3{font-size:18px;font-weight:500;margin-top:10px}
+.lk{display:grid;grid-template-columns:1fr 1fr;gap:10px;font-size:11px;justify-self:end}
+footer .b2{border-top:1px solid #ffffff18;padding-top:22px;display:flex;justify-content:space-between;font-size:10px;color:#8d90ad}
+.rv{opacity:0;transform:translateY(36px);transition:opacity .8s,transform .8s cubic-bezier(.2,.8,.2,1)}.rv.in{opacity:1;transform:none}
+@media(max-width:860px){.case{grid-template-columns:1fr}.case .tx{padding:32px 28px}.hero .w,.bento,.night .w,.cta,footer .t,.split{grid-template-columns:1fr}nav ul{display:none}.tall{grid-row:auto}.orb{height:400px}.cta{padding:32px}.lk{justify-self:start}.ver{display:none}.c1{left:-4px}.c3{right:-4px}}
+@media(prefers-reduced-motion:reduce){*{animation-duration:.01s!important;transition-duration:.01s!important}.rv{opacity:1;transform:none}.ln span{transform:none}}
+.mn{display:none;width:42px;height:42px;border:1px solid var(--line);border-radius:50%;background:var(--card);cursor:pointer;padding:0;position:relative;flex:none}
+.mn i{position:absolute;left:13px;right:13px;height:2px;background:var(--ink);transition:transform .3s}
+.mn i:first-child{top:16px}.mn i:last-child{top:24px}
+nav.open .mn i:first-child{transform:translateY(4px) rotate(45deg)}nav.open .mn i:last-child{transform:translateY(-4px) rotate(-45deg)}
+@media(max-width:1024px){
+.w{padding:0 28px}section{padding:88px 0}
+.hero h1{font-size:clamp(46px,10vw,104px)}
+.stage{aspect-ratio:1.7/1}.pc2{left:8%;width:36%;min-width:220px}.tag2{left:50%}.orbit{right:5%}
+.night .w{gap:40px}.cta{padding:44px}
+}
+@media(max-width:860px){
+nav .w{gap:12px}.mn{display:block}nav>.w>.btn{margin-left:auto;padding:11px 16px}
+nav.open ul{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:var(--bg);padding:20px 28px 24px;gap:18px;border-bottom:1px solid var(--line);font-size:16px}
+section{padding:72px 0}.hd{margin-bottom:32px}.hero{padding-bottom:64px}.lead{margin:36px 0}
+.bc{padding:26px}.big{font-size:68px}.globe{aspect-ratio:1.1}.night .w{gap:36px}
+.case .vis{min-height:360px}.cta{padding:32px}
+footer{margin-top:64px;padding-top:48px}footer .t{padding-bottom:36px}
+}
+@media(max-width:600px){
+.w{padding:0 18px}nav .w{height:64px}.lg{font-size:14px}.lg s{width:26px;height:26px}
+nav>.w>.btn span{display:none}nav.open ul{padding:20px 18px 24px}
+.hero{padding-top:16px}.meta{gap:12px}.meta .mono{font-size:10px}
+.hero h1{font-size:clamp(40px,13vw,64px);letter-spacing:-.055em}
+.lead p{font-size:15px}.go{width:60px;height:60px;font-size:22px}
+.stage{min-height:520px}.pc2{padding:24px 24px 28px;min-width:0;width:78%;left:5%}.pc2 h3{font-size:24px;margin-top:28px}
+.tag2{left:26%;top:50%;font-size:12px;padding:12px 16px}
+.orbit{width:84px;min-width:84px}.orbit text{font-size:12px}
+.strip .mono{display:none}.tr{gap:40px;font-size:13px}
+.hd h2{font-size:clamp(34px,11vw,44px)}.hd p{max-width:none}
+.case{min-height:0}.case .tx{padding:26px 22px;gap:24px}.case h3{font-size:34px}
+.case .vis{min-height:330px}.vf{width:200px;height:270px;padding:20px}.vf .st{font-size:38px;margin-top:30px}.vb{width:190px;height:250px}.mb{height:70px;left:20px;right:20px;bottom:18px}
+.bc h3{font-size:22px}.big{font-size:56px}.viz{min-height:220px}.bc .ic[style]{width:64px!important;height:64px!important}
+.night h2{font-size:clamp(40px,12vw,56px)}.nums{gap:28px}.quote h2{font-size:26px}
+.cta{padding:26px 20px;border-radius:16px}.cta h2{font-size:clamp(34px,11vw,48px)}.pc{padding:22px}
+footer .b2{flex-direction:column;gap:8px}
+}
+@media(max-width:860px){
+.stage{aspect-ratio:auto;height:clamp(500px,150vw,640px);min-height:0}
+.pc2{left:6%;top:27%;width:min(62%,360px);min-width:0;padding:22px 22px 26px}
+.pc2 h3{font-size:clamp(20px,5.6vw,30px);margin-top:26px}
+.tag2{left:auto;right:6%;top:66%;font-size:clamp(11px,3.3vw,15px);padding:12px 16px}
+.orbit{left:auto;right:6%;top:5%;bottom:auto;width:clamp(84px,25%,150px);min-width:0}
+.coral{left:0;top:80%;width:24%}
+.lm2{left:52%;top:79%;width:44%}
+}
+</style></head><body>
+<nav><div class="w"><a class="lg" href="#top"><s>C</s>Chandra Sekhar Sai</a>
+<ul><li><a href="#work">Work</a></li><li><a href="#reach">Approach</a></li><li><a href="#quote">Principles</a></li></ul>
+<a class="btn dk" href="mailto:chandrasekhar.sai47@gmail.com">Get in touch <span>→</span></a><button class="mn" aria-label="Menu" aria-expanded="false"><i></i><i></i></button></div></nav>
+
+<header class="hero" id="top"><div class="w">
+<div class="meta mono"><span>Product Designer</span><i></i><span>UI / UX Designer</span><i></i><span>5+ Years Experience</span></div>
+<h1><span class="ln"><span style="font-size: 92px;">I turn complex ideas</span></span><span class="ln"><span style="font-size: 92px;"> into <span class="b">simple, useful</span></span></span><span class="ln" ><span style="font-size: 92px;"> products.</span></span></h1>
+<div class="lead rv"><p>I’m Chandra Sekhar Sai, A Product Designer crafting thoughtful digital experiences through strategy, systems thinking, and a sharp eye for detail.</p><a class="go" href="#work" aria-label="View my work">→</a></div>
+<div class="stage rv"><span class="rg r1"></span><span class="rg r2"></span><span class="rg r3"></span>
+<div class="pc2"><span class="mono">Design principle 01</span><h3>Make it clear. Then make it delightful.</h3></div>
+<div class="tag2">From ambiguity<br>to clarity <b>↗</b></div>
+<div class="orbit"><svg viewBox="0 0 200 200"><defs><path id="cp" d="M100,100 m-62,0 a62,62 0 1,1 124,0 a62,62 0 1,1 -124,0"/></defs><text><textPath href="#cp">RESEARCH · STRATEGY · INTERACTION · SYSTEMS · </textPath></text></svg></div>
+<span class="cl coral"></span><span class="cl lm2"></span></div>
+</div></header>
+
+<div class="strip"><div class="w"><span class="mono" style="max-width:110px">Tools &amp; craft</span>
+<div class="mq"><div class="tr" id="tr"></div></div><span class="ver">✓ Figma &amp; Adobe XD</span></div></div>
+
+<section id="work"><div class="w">
+<div class="hd rv"><div><span class="mono" style="color:var(--blue)">01 / Selected work</span><h2>Work that moved<br>the needle.</h2></div><p>A selection of products shaped through close collaboration, grounded research, and plenty of iteration.</p></div>
+<div class="cases">
+<article class="case rv"><div class="tx"><span class="no">01</span><div><span class="mono">Mobile app · Product design</span><h3>Pulse Health</h3><p>Making everyday care easier to understand, access, and act on.</p></div><a class="lk2" href="#contact">View case study <span>→</span></a></div>
+<div class="vis" style="--pc:var(--blue);--sc:var(--blue)"><div class="vb"></div><div class="vf"><div class="dash"></div><div class="st">+<span data-n="34" data-s="%">0</span></div><div class="lb">Appointment completion</div><div class="mb"><i style="--h:22px"></i><i style="--h:38px"></i><i style="--h:30px"></i><i style="--h:56px"></i><i style="--h:80px"></i></div></div></div></article>
+<article class="case rv"><div class="tx"><span class="no">02</span><div><span class="mono">Fintech · UX strategy</span><h3>Ledgerly</h3><p>Turning dense financial data into clear, confident decisions.</p></div><a class="lk2" href="#contact">View case study <span>→</span></a></div>
+<div class="vis" style="--pc:var(--lime);--sc:var(--ink)"><div class="vb"></div><div class="vf"><div class="dash"></div><div class="st"><span data-n="3" data-s="×">0</span></div><div class="lb">Task success rate</div><div class="mb"><i style="--h:30px"></i><i style="--h:24px"></i><i style="--h:48px"></i><i style="--h:62px"></i><i style="--h:84px"></i></div></div></div></article>
+<article class="case rv"><div class="tx"><span class="no">03</span><div><span class="mono">B2B dashboard · Design system</span><h3>Atlas Console</h3><p>One consistent system for a complex tool that teams use all day.</p></div><a class="lk2" href="#contact">View case study <span>→</span></a></div>
+<div class="vis" style="--pc:var(--navy);--sc:var(--blue)"><div class="vb"></div><div class="vf"><div class="dash"></div><div class="st">−<span data-n="40" data-s="%">0</span></div><div class="lb">Time to complete</div><div class="mb"><i style="--h:84px"></i><i style="--h:66px"></i><i style="--h:52px"></i><i style="--h:38px"></i><i style="--h:26px"></i></div></div></div></article>
+</div></div></section>
+<section id="do"><div class="w">
+<div class="hd rv"><div><span class="mono">02 / What I do</span><h2>Design without<br><span class="b">the guesswork.</span></h2></div><p>Good design shouldn’t make a product harder to use. I take work from first question to final handoff, so it’s clear, consistent and ready to build.</p></div>
+<div class="bento">
+<div class="bc tall rv"><div class="t"><span class="mono">01</span><div class="ic" style="margin-top:22px">◎</div><h3>User Centered</h3><p>Understanding users and their problems first, so every decision has to be taken based on users behaviour and needs.</p><a class="mono" style="color:var(--ink);display:inline-block;margin-top:18px" href="#contact">Start a project →</a></div>
+<div class="viz"><div class="core"><svg style="height: 24px; width:24px; fill:#f1f1f1;" id="User" enable-background="new 0 0 64 64" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg"><path d="m47.7214 15.72084c0 8.68238-7.03846 15.72084-15.72084 15.72084s-15.72084-7.03846-15.72084-15.72084 7.03846-15.72084 15.72084-15.72084 15.72084 7.03846 15.72084 15.72084zm11.86557 43.9146c-2.20743-12.50614-13.74075-22.03448-27.60692-22.03448-13.86655 0-25.36735 9.52916-27.56737 22.03609-.40252 2.2883 1.46953 4.36295 3.79296 4.36295h47.58862c2.32408 0 4.19669-2.07586 3.79271-4.36456z"/></svg></div><span class="dot" style="left:12%;top:30%"></span><span class="dot" style="right:12%;top:22%;animation-delay:-1s"></span><span class="dot" style="right:20%;bottom:16%;animation-delay:-.5s"></span></div></div>
+<div class="bc dk2 rv"><span class="mono" style="color:#fff">02</span><div class="split"><div><h3>Design systems</h3><p>Scalable components and guidelines that keep teams fast and aligned.</p></div>
+<div style="text-align:center"><span class="mono" style="color:#8d90ad">Experience</span><div class="big" data-n="5" data-s="+">0</div><span class="mono" style="color:#8d90ad">Years</span><div class="bars" style="justify-content:center"><i style="--h:18px"></i><i style="--h:30px"></i><i style="--h:24px"></i><i style="--h:42px"></i><i style="--h:36px"></i><i style="--h:50px"></i><i style="--h:60px"></i><i style="--h:46px"></i></div></div></div></div>
+<div class="bc rv"><span class="mono">03</span><div class="split"><div><h3>Prototyping</h3><p>Interactive flows in Figma and Adobe XD that let teams test ideas before building them.</p><div class="tags"><span>FIGMA</span><span>ADOBE XD</span><span>WIREFRAMES</span></div></div><div class="ic" style="width:84px;height:84px;background:var(--blue);color:#fff;font-size:26px;justify-self:center;animation:breathe 3s infinite">▶</div></div></div>
+</div></div></section>
+
+<section class="night" id="reach"><div class="w">
+<div class="rv"><span class="mono"><i></i>03 / Range</span><h2>One designer.<br><span class="l">Two worlds.</span></h2>
+<p class="d">I move comfortably between B2B tools and B2C products, adapting the process to the people using them and the team building them.</p>
+<div class="steps"><span><b>01</b>Understand users and business goals.</span><span><b>02</b>Shape, test and refine the flow.</span><span><b>03</b>Hand off a system developers can trust.</span></div>
+<div class="nums"><div><b data-n="5" data-s="+">0</b><small>Years of experience</small></div><div><b data-n="2">0</b><small>Product worlds</small></div></div>
+<a class="btn" style="background:#fff;color:#12142b" href="#contact">Let’s talk <span>→</span></a></div>
+<div class="globe rv"><span class="r r1"></span><span class="r r2"></span><span class="r r3"></span><span class="pin"></span>
+<span class="dot" style="right:12%;top:28%"></span><span class="dot" style="left:22%;top:48%;animation-delay:-1s"></span><span class="dot" style="right:24%;bottom:26%;animation-delay:-2s"></span>
+<div class="bar"><span><span class="mono" style="color:#8d90ad;display:block;font-size:8px">Working across</span>B2B &amp; B2C products</span><span class="l">End to end</span></div></div>
+</div></section>
+
+<section class="quote" id="quote"><div class="w rv"><span class="mono"><i></i>04 / How I think</span>
+<div class="qm" style="margin-top:28px">“</div>
+<h2>Good design is invisible when you want it, <span class="b">intentional</span> when you need it.</h2>
+<div class="who"><i>CS</i><div><b>Chandra Sekhar Sai</b><br><span class="mono" style="font-size:9px">Product Designer</span></div></div></div></section>
+
+<div class="w" style="padding-bottom:0" id="contact"><div class="cta rv"><div><span class="mono">Let’s work together</span><h2>Build something <em>people love.</em></h2><p style="opacity:.8;font-size:13px">One conversation. Clear next steps. No pressure.</p></div>
+<div class="pc"><span class="mono">Product design</span><div class="big2">Say hello</div><small style="color:var(--mut);font-size:11px">Open to full-time and freelance work</small>
+<ul><li>End-to-end design process</li><li>B2B and B2C experience</li><li>Figma &amp; Adobe XD</li></ul>
+<a class="btn lm" href="mailto:chandrasekhar.sai47@gmail.com">Email me <span>→</span></a></div></div></div>
+
+<footer><div class="w"><div class="t"><div><a class="lg" href="#top"><s style="background:var(--blue);color:#f1f1f1">C</s>Chandra Sekhar Sai</a><p style="font-size: 14px;" >Quietly improving digital products.</p></div>
+<div><span class="mono" style="color:var(--lime)">Product Designer · UI/UX</span><h3>Simple. Human. Usable.</h3></div>
+<div class="lk" style="font-size: 13px;"><a href="#work">What I do</a><a href="#reach">Range</a><a href="#quote">Principles</a><a href="#contact">Contact</a></div></div>
+<div class="b2" style="font-size: 13px;" ><span>© 2026 Chandra Sekhar Sai</span><a href="#top">Back to top ↑</a></div></div></footer>
+
+<script>
+(function(){
+try{if('scrollRestoration' in history)history.scrollRestoration='manual'}catch(e){}
+function top(){window.scrollTo({top:0,left:0,behavior:'instant'})}
+top();window.addEventListener('load',top);window.addEventListener('pageshow',top);
+var nv=document.querySelector('nav'),mn=document.querySelector('.mn');
+mn.addEventListener('click',function(){var o=nv.classList.toggle('open');mn.setAttribute('aria-expanded',o)});
+nv.querySelectorAll('ul a').forEach(function(a){a.addEventListener('click',function(){nv.classList.remove('open');mn.setAttribute('aria-expanded',false)})});
+var t=["Figma","Adobe XD","User Research","Wireframing","Prototyping","Design Systems","B2B","B2C"],h="";
+for(var k=0;k<2;k++)t.forEach(function(x){h+="<span>"+x+"</span>"});
+document.getElementById("tr").innerHTML=h+h;
+function cnt(el){var n=+el.dataset.n,s=el.dataset.s||"",t0=null;(function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1300,1);el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+s;if(p<1)requestAnimationFrame(f)})(0)}
+function run(el){var t0=null;function f(t){if(!t0)t0=t;var p=Math.min((t-t0)/1300,1),n=+el.dataset.n;el.textContent=Math.round(n*(1-Math.pow(1-p,3)))+(el.dataset.s||"");if(p<1)requestAnimationFrame(f)}requestAnimationFrame(f)}
+var io=new IntersectionObserver(function(es){es.forEach(function(e){if(e.isIntersecting){e.target.classList.add("in");e.target.querySelectorAll("[data-n]").forEach(run);io.unobserve(e.target)}})},{threshold:.15});
+document.querySelectorAll(".rv").forEach(function(el,i){el.style.transitionDelay=(i%3)*.1+"s";io.observe(el)});
+})();
+</script></body></html>
