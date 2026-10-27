@@ -180,7 +180,70 @@ footer .b2{flex-direction:column;gap:8px}
 .coral{left:0;top:80%;width:24%}
 .lm2{left:52%;top:79%;width:44%}
 }
-</style></head><body>
+</style>
+
+
+<style>
+  .cursor-glow {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background: radial-gradient(
+      circle,
+      rgba(120, 80, 255, 0.22) 0%,
+      rgba(80, 120, 255, 0.12) 40%,
+      transparent 70%
+    );
+    filter: blur(35px);
+    pointer-events: none;
+    z-index: 99999;
+    transform: translate(-50%, -50%);
+    will-change: left, top;
+  }
+
+  @media (pointer: coarse) {
+    .cursor-glow {
+      display: none;
+    }
+  }
+</style>
+
+<div class="cursor-glow"></div>
+
+<script>
+  (() => {
+    const glow = document.querySelector(".cursor-glow");
+    if (!glow) return;
+
+    let mouseX = -300;
+    let mouseY = -300;
+    let glowX = mouseX;
+    let glowY = mouseY;
+
+    document.addEventListener("mousemove", (e) => {
+      mouseX = e.clientX;
+      mouseY = e.clientY;
+    });
+
+    function animate() {
+      glowX += (mouseX - glowX) * 0.12;
+      glowY += (mouseY - glowY) * 0.12;
+
+      glow.style.left = `${glowX}px`;
+      glow.style.top = `${glowY}px`;
+
+      requestAnimationFrame(animate);
+    }
+
+    animate();
+  })();
+</script>
+
+
+</head><body>
 <nav><div class="w"><a class="lg" href="#top"><s>C</s>Chandra Sekhar Sai</a>
 <ul><li><a href="#work">Work</a></li><li><a href="#reach">Approach</a></li><li><a href="https://drive.google.com/file/d/1rUdwrpvie9QA2hucsPgOQvGBKSpVqsBl/view?usp=sharing" target="blank">Resume</a></li></ul>
 <a class="btn dk" href="mailto:chandrasekhar.sai47@gmail.com">Get in touch <span>→</span></a><button class="mn" aria-label="Menu" aria-expanded="false"><i></i><i></i></button></div></nav>
